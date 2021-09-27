@@ -19,9 +19,7 @@ async function loginUser(credentials) {
         .catch(err=>{
           err.response.status===500 ? alert('ارتباط با سرور برقرار نشد. بعداً مجدد تلاش کنید')
           : err.response.status===422 && alert('نام کاربری یا رمز عبور اشتباه می باشد. دوباره امتحان کنید');
-          
         }))
-        
        ))
      }
 
