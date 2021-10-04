@@ -12,6 +12,7 @@ import Availability from './Availability/Availability';
 import Login from './Components/Login/Login.js';
 import useToken from './useToken.js';
 import UserInfo from './Components/UserInfo/UserInfo';
+import UserInfoExtended from './Components/UserInfo/UserInfoExtended';
 
 function App() {
   const { token, setToken } = useToken();
@@ -34,6 +35,7 @@ function App() {
     <BrowserRouter>
     <AppNavbar/>
     <UserInfo />
+    <Route exact path="/UserProfile" render={()=><UserInfoExtended/>} />
     <Route exact path="/" render={()=><Home/>} />
     <Route exact path="/Courses" render={()=><Courses/>} />
     <Route path="/PlacementTest" render={()=>quizGenerator} />

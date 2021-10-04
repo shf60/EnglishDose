@@ -75,3 +75,13 @@ a.navbar-brand{
 .wrapper {
   padding: 20px;
 }
+.round-image {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  display: block;
+  border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+ }
